@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+  /* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Main Content Container */
+.info-container {
+    max-width: 800px;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Header Text */
+.info-container h1 {
+    font-size: 28px;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+/* Styled Cards for Sections */
+.info-card, .contact-card {
+    background: #fff8e1; /* Light yellow for uniqueness */
+    padding: 20px;
+    border-radius: 8px;
+    margin: 15px 0;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.info-card h2, .contact-card h2 {
+    color: #444;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+/* Contact Links */
+.contact-card a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+.contact-card a:hover {
+    text-decoration: underline;
+}
+
+/* Home Button */
+.home-btn {
+    background: #007BFF;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.home-btn:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Simple Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+</style>
+<body>
+    <section class="info-container">
+        <h1>About Us</h1>
+        <hr>
+        <p>Welcome to <strong>Our News Portal</strong>, your trusted source for the latest news and insights. We are dedicated to delivering accurate, timely, and engaging content to keep you informed.</p>
+        <hr>
+
+        <div class="info-card">
+            <h2>Our Mission</h2>
+            <p>Cyber Care একটি নিরাপদ সাইবার সেবা প্রতিষ্ঠান।
+Cyber Care কোনো ধরনের হয়রানি করে না, বরং হ্যারাসমেন্ট, নিরাপত্তা লঙ্ঘনকারী ও ঝুঁকিপূর্ণ ওয়েবসাইট, ফেসবুক, টিকটকসহ অন্যান্য সোশ্যাল মিডিয়া অ্যাকাউন্ট অপসারণে সহায়তা করে।
+
+সোশ্যাল মিডিয়ার যেকোনো সমস্যার জন্য Cyber Care-এর সদস্যদের সাথে যোগাযোগ করুন।
+
+Cyber Care হ্যাক হওয়া অ্যাকাউন্ট, লক হওয়া বা নিষ্ক্রিয় (ডিসেবল) অ্যাকাউন্ট পুনরুদ্ধারে সহায়তা করে।
+
+সোশ্যাল মিডিয়ার যেকোনো সমস্যার জন্য নির্দ্বিধায় Cyber Care-এর টিমের সাথে যোগাযোগ করুন।
+
+</p>
+        </div>
+
+        <div class="info-card">
+            <h2>Why Choose Us?</h2>
+            <ul>
+                <li>আমাদের এখানে ২৪ ঘণ্টা সেবা প্রদান করা হয়।</li>
+                <li>আমাদের এখানে অগ্রিম কোনো অর্থ নেওয়া হয় না।</li>
+               <li>আমরা বিশেষ ক্ষেত্রে অর্থ ছাড়াই কাজ করে থাকি।</li>
+               <li>কোনো টিম মেম্বারের ব্যবহার খারাপ লাগলে, সিনিয়র অ্যাডমিনকে জানাতে পারেন।</li>
+            </ul>
+        </div>
+
+        <button class="home-btn" onclick="window.location.href='index.html'">← Back to Home</button>
+    </section>
+</body>
+</html>

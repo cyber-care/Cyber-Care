@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Care</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.png">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="News Portal Logo">
+        </div>
+    <div class="group-name">
+    <img src="name.png" alt="Group Name">
+</div>
+    <div class="menu-btn" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+   <div class="nav-menu" id="navMenu">
+        <a href="about.html">About Us</a>
+        <hr>
+        <a href="contact.html">Contact Us</a>
+        <hr>
+    </div>
+    </header>
+    <!-- Image Carousel (Yellow Section) -->
+<div class="main-content">
+        <!-- Image Carousel -->
+        <section class="slideshow">
+            <div class="carousel">
+                <img src="slide1.jpg" class="active">
+                <img src="slide2.jpg">
+                <img src="slide3.jpg">
+                <!-- Navigation arrows -->
+                <button class="carousel-btn prev" onclick="moveSlide(-1)">❮</button>
+                <button class="carousel-btn next" onclick="moveSlide(1)">❯</button>
+                <!-- Indicators -->
+                <div class="indicators">
+                    <span class="indicator active" onclick="goToSlide(0)"></span>
+                    <span class="indicator" onclick="goToSlide(1)"></span>
+                    <span class="indicator" onclick="goToSlide(2)"></span>
+                </div>
+            </div>
+        </section>
+<section class="news-container">
+   <div class="news-box" onclick="toggleNews(this)">
+        <img src="news9.jpg" class="news-img">
+        <hr>
+        <div class="tags">
+            <span class="tag">Harassment</span>
+            <span class="tag">Facebook Account</span>
+        </div>
+        <h2>Account Removed</h2>
+        <p class="date"> april 4, 2025</p>
+        <p class="news-content">এক জন কে হেরেজমেন্ট করাই Cyber Care এর পক্ষ থেকে একটি ফেসবুক একাউন্ট রিমুভ করা হল<span class="full-content">
+      </span></p>
+      </div>
+    <div class="news-box" onclick="toggleNews(this)">
+        <img src="news1.jpg" class="news-img">
+        <hr>
+        <div class="tags">
+            <span class="tag">Religious harassment</span>
+            <span class="tag">Tik tok Post</span>
+        </div>
+        <h2>Harassment post Removed</h2>
+        <p class="date">January 1, 2025</p>
+        <p class="news-content">Cyber Care এর পক্ষ থেকে টিকটক এ ইসলাম ধর্ম কে নিয়ে কটুক্তি করার কারনে পোস্ট টি রিমুভ কার হল।<span class="full-content">
+      </span></p>
+      </div>
+      <div class="news-box" onclick="toggleNews(this)">
+        <img src="news2.jpg" class="news-img">
+        <hr>
+        <div class="tags">
+            <span class="tag">Harassment</span>
+            <span class="tag">personal</span>
+        </div>
+        <h2>Account Removed</h2>
+        <p class="date">April 3, 2025</p>
+        <p class="news-content">Cyber Care এর পক্ষ থেকে একজন কে হেরেজমেন্ট করার ফেসবুক একাউন্ট টি রিমুভ করা হল।<span class="full-content">
+      </span></p>
+      </div>
+      <div class="news-box" onclick="toggleNews(this)">
+        <img src="news3.jpg" class="news-img">
+        <hr>
+        <div class="tags">
+            <span class="tag">Harassment</span>
+            <span class="tag">Account</span>
+        </div>
+        <h2>Account Removed</h2>
+        <p class="date"> Jan 23, 2025</p>
+        <p class="news-content">Cyber Care এর পক্ষ থেকে একজন কে হেরেজমেন্ট করার ফেসবুক একাউন্ট টি রিমুভ করা হল।<span class="full-content">
+      </span></p>
+      </div>
+    <div class="news-box" onclick="toggleNews(this)">
+        <img src="news4.jpg" class="news-img">
+        <hr>
+        <div class="tags">
+            <span class="tag">Harassment</span>
+            <span class="tag">Account</span>
+        </div>
+        <h2>Account Removed</h2>
+        <p class="date"> Jan 23, 2025</p>
+        <p class="news-content">Cyber Care এর পক্ষ থেকে একজন কে হেরেজমেন্ট করার ফেসবুক একাউন্ট টি রিমুভ করা হল। <span class="full-content">
+      </span></p>
+      </div>
+   <div class="news-box" onclick="toggleNews(this)">
+        <img src="news5.jpg" class="news-img">
+        <hr>
+        <div class="tags">
+            <span class="tag">Harassment</span>
+            <span class="tag">Account</span>
+        </div>
+        <h2>Account Removed</h2>
+        <p class="date"> Jan 19, 2025</p>
+        <p class="news-content">Cyber Care এর পক্ষ থেকে একজন কে হেরেজমেন্ট করার ফেসবুক একাউন্ট টি রিমুভ করা হল।<span class="full-content">
+      </span></p>
+      </div>
+     <div class="news-box" onclick="toggleNews(this)">
+        <img src="news6.jpg" class="news-img">
+        <hr>
+        <div class="tags">
+            <span class="tag">Betting site Promotion</span>
+            <span class="tag">Post</span>
+        </div>
+        <h2>Post Removed</h2>
+        <p class="date"> Jan 18, 2025</p>
+        <p class="news-content">টিকটক এ জুয়া প্রমোট করে ভিডিও দেওয়ার জন্য Cyber Care এর পক্ষ থেকে দুইটি পোস্ট রিমুভ করা হল।<span class="full-content">
+      </span></p>
+      </div>
+         <div class="news-box" onclick="toggleNews(this)">
+        <img src="news7.jpg" class="news-img">
+        <hr>
+        <div class="tags">
+            <span class="tag">Harassment</span>
+            <span class="tag">Account</span>
+        </div>
+        <h2>Account Removed</h2>
+        <p class="date"> Jan 18, 2025</p>
+        <p class="news-content">Cyber Care এর পক্ষ থেকে একজন কে হেরেজমেন্ট করার ফেসবুক একাউন্ট টি রিমুভ করা হল।<span class="full-content">
+      </span></p>
+      </div>
+         <div class="news-box" onclick="toggleNews(this)">
+        <img src="news8.jpg" class="news-img">
+        <hr>
+        <div class="tags">
+            <span class="tag">Fake website promotion</span>
+            <span class="tag">tik tok</span>
+        </div>
+        <h2>Post Removed</h2>
+        <p class="date"> Jan 9, 2025</p>
+        <p class="news-content">টিকটকে ফেক ওয়েবসাইট প্রমোট করে ভিডিও দেওয়ার জন্য Cyber Care এর পক্ষ থেকে পোস্টটি রিমুভ করা হল।<span class="full-content">
+      </span></p>
+      </div>
+     
+   </section>
+<footer>
+    <div class="footer-content">
+        <p>Powered by Cyber Care | © 2025 All Rights Reserved</p>
+    </div>
+</footer>
+    <script>
+        // Carousel functionality
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.carousel img');
+        const indicators = document.querySelectorAll('.indicator');
+        
+        function showSlide(n) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            indicators.forEach(indicator => indicator.classList.remove('active'));
+            
+            currentSlide = (n + slides.length) % slides.length;
+            slides[currentSlide].classList.add('active');
+            indicators[currentSlide].classList.add('active');
+        }
+        
+        function moveSlide(n) {
+            showSlide(currentSlide + n);
+        }
+        
+        function goToSlide(n) {
+            showSlide(n);
+        }
+        
+        // Auto-advance slides every 3 seconds
+        setInterval(() => {
+            moveSlide(1);
+        }, 3000);
+        
+        // Menu toggle functionality
+        function toggleMenu() {
+            const navMenu = document.getElementById('navMenu');
+            navMenu.style.display = navMenu.style.display === 'block' ? 'none' : 'block';
+        }
+        
+        // News box toggle functionality
+        function toggleNews(newsBox) {
+            const fullContent = newsBox.querySelector('.full-content');
+            fullContent.style.display = fullContent.style.display === 'block' ? 'none' : 'block';
+        }
+        
+        // Initialize first slide
+        showSlide(0);
+    </script>
+</body>
+</html>

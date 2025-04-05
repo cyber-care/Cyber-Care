@@ -1,0 +1,254 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    background: #2C3E50;
+    padding: 2px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 60px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.3);
+}
+/* Remove any padding-top from body */
+body {
+    font-family: Arial, sans-serif;
+    background: lightgray;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+/* Main content container - pushes everything below header */
+.main-content {
+    margin-top: 60px; /* Same as header height */
+    position: relative;
+}
+
+/* Carousel/slideshow adjustments */
+.slideshow {
+    padding: 15px;
+    position: relative; /* Remove if causing issues */
+    z-index: 1; /* Lower than header */
+}
+
+.carousel {
+    background: #FFD700;
+    height: 250px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 3px 3px 5px black;
+}
+.group-name {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 9px;
+}
+   
+.logo img{
+    width: 50px;  /* Adjust size as needed */
+    height: 50px; /* Ensure it's a perfect square */
+    border-radius: 50%;
+    object-fit: cover; /* Ensures the image fills the circle */
+    margin: 10px;
+    padding: 1px;
+    background: lightblue;
+    box-shadow: 3px 3px 5px black;
+}
+nav {
+    display: flex;
+    align-items: center;
+}
+.hamburger-menu {
+    font-size: 24px;
+    cursor: pointer;
+}
+.menu {
+    display: none;
+    position: absolute;
+    background: white;
+    padding: 10px;
+    border: 1px solid black;
+}
+.menu a {
+    display: block;
+    padding: 5px;
+}
+.news-container {
+    padding: 20px;
+}
+.news-box {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    background: white;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 20px 0 50px 0;
+    box-shadow: 3px 3px 5px black;
+    cursor: pointer;
+}
+.news-box img {
+    width: 100%;
+}
+.news-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+.news-box:hover .news-img {
+    transform: scale(1.05);
+}
+
+.tags {
+    display: flex;
+    gap: 5px;
+}
+.tag {
+    background:  #f0f0f0;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.3);
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin: 10px;
+}
+.date {
+    font-size: 14px;
+}
+.full-content {
+    display: none;
+}
+
+ /* Hamburger Menu */
+        .menu-btn {
+            position: fixed;
+            top: 15px;
+            right: 10px;
+            cursor: pointer;
+            z-index: 1000;
+        }
+      .menu-btn span {
+            display: block;
+            width: 25px;
+            height: 3px;
+            background: white;
+            margin: 5px 0;
+            border-radius: 0px;
+            box-shadow: 3px 3px 5px black;
+        }
+        .nav-menu {
+            position: fixed;
+            top: 0;
+            right: -250px;
+            width: 250px;
+            height: 100%;
+            background: #222;
+            transition: right 0.3s ease;
+            z-index: 999;
+            padding-top: 60px;
+        }
+        .nav-menu.active {
+            right: 0;
+        }
+        .nav-menu a {
+            color: white;
+            padding: 15px;
+            text-decoration: none;
+            display: block;
+        }
+.full-content {
+    display: none; /* Initially hidden */
+}
+footer {
+    background: #222; /* Dark background */
+    color: #fff; /* White text */
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: auto;
+}
+.carousel {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.3);
+}
+
+.carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.carousel img.active {
+    opacity: 1;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prev {
+    left: 15px;
+}
+
+.next {
+    right: 15px;
+}
+
+.indicators {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 10;
+}
+
+.indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.5);
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.indicator.active {
+    background: white;
+}

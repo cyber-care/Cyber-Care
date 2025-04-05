@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+  /* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Warning Marquee */
+.warning-marquee {
+    width: 100%;
+    background: red; /* Warning background */
+    color: white;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.warning-marquee p {
+    display: inline-block;
+    white-space: nowrap;
+    padding-left: 100%;
+    animation: scroll-text 15s linear infinite;
+}
+
+@keyframes scroll-text {
+    from {
+        transform: translateX(1%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* Main Content Container */
+.info-container {
+    max-width: 800px;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: fadeIn 0.8s ease-in-out;
+    margin-top: 60px; /* Space below warning text */
+}
+
+/* Header Text */
+.info-container h1 {
+    font-size: 28px;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+/* Styled Cards for Sections */
+.info-card, .contact-card {
+    background: #fff8e1; /* Light yellow for uniqueness */
+    padding: 20px;
+    border-radius: 8px;
+    margin: 15px 0;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.info-card h2, .contact-card h2 {
+    color: #444;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+/* Contact Links */
+.contact-card a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+.contact-card a:hover {
+    text-decoration: underline;
+}
+
+/* Home Button */
+.home-btn {
+    background: #007BFF;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.home-btn:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Simple Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Contact Icons */
+.contact-icon {
+    width: 40px; /* Adjust size */
+    height: 40px;
+    border-radius: 50%; /* Makes it round */
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.contact-card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+</style>
+<body>
+
+    <!-- Scrolling Warning Text -->
+    <div class="warning-marquee">
+        <p>⚠ WARNING: অনেকেই আমাদের নাম ব্যবহার করে ভুয়া পেজ তৈরি করে, তাই সাবধান থাকুন। আমাদের কেবল একটি পেজ এবং একটি গ্রুপ আছে। ⚠</p>
+    </div>
+
+    <section class="info-container">
+        <h1>Contact Us</h1>
+        <hr>
+        <p>Got questions? Want to collaborate? Reach out to us using the details below:</p>
+        <hr/>
+
+        <div class="contact-card">
+            <img src="email.png" alt="Email Icon" class="contact-icon">
+            <p><a href="mailto:your-email@example.com">Nilarex7@gmail.com</a></p>
+        </div>
+
+        <div class="contact-card">
+            <img src="page.png" alt="Facebook Page Icon" class="contact-icon">
+            <p><a href="https://www.facebook.com/profile.php?id=61571176666184" target="_blank">Visit our page</a></p>
+        </div>
+
+        <div class="contact-card">
+            <img src="group.png" alt="Facebook Group Icon" class="contact-icon">
+            <p><a href="https://facebook.com/groups/2407425902872069/" target="_blank">Join our group</a></p>
+        </div>
+
+        <button class="home-btn" onclick="window.location.href='index.html'">← Back to Home</button>
+    </section>
+
+</body>
+</html>
