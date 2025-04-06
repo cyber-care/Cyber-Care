@@ -8,7 +8,59 @@
     <link rel="icon" href="favicon.png">
     <script defer src="script.js"></script>
 </head>
+    <style> 
+  .popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+  position: relative;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.popup-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+}
+    </style>
+
+    
 <body>
+<div id="palestinePopup" class="popup">
+  <div class="popup-content">
+    <span class="close-btn" onclick="closePopup()">&times;</span>
+    <img src="33.jpg" alt="Free Palestine" />
+    <p><strong>Free Palestine</strong><br>We stand for justice, peace, and freedom. Join us in raising your voice for Palestine.</p>
+  </div>
+</div>
+  
+
+    
     <header>
         <div class="logo">
             <img src="logo.png" alt="News Portal Logo">
@@ -205,6 +257,18 @@
         
         // Initialize first slide
         showSlide(0);
+
+
+
+        function closePopup() {
+    document.getElementById("palestinePopup").style.display = "none";
+  }
+
+  window.onload = function() {
+    setTimeout(() => {
+      document.getElementById("palestinePopup").style.display = "flex";
+    }, 500); // Delay popup by 0.5 second
+  }
     </script>
 </body>
 </html>
